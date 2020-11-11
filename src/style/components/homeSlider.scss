@@ -1,0 +1,110 @@
+.slide__item {
+  height: 600px;
+  width: 100%;
+  outline: 0 !important;
+  border: 0 !important;
+  background-size: cover;
+  background-position: center !important ;
+  @media #{$large-mobile} {
+    height: 500px;
+  }
+  .slide__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 100%;
+    color: white;
+
+    .slide__title {
+      font-family: "Poppins";
+      font-weight: 800;
+      @media #{$tablet-device} {
+        font-size: 46px;
+      }
+      @media #{$large-mobile} {
+        font-size: 42px;
+        line-height: 52px;
+      }
+      @media #{$small-mobile} {
+        font-size: 36px;
+        line-height: 46px;
+      }
+      margin: 0;
+      text-shadow: 0 10px 50px rgba(black, 0.2);
+      padding: 0;
+      font-size: 56px;
+      text-transform: capitalize;
+      line-height: 1.15;
+      span {
+        color: $color__primary;
+        font-family: "Poppins";
+        font-weight: 800;
+      }
+    }
+    .slide__para {
+      font-size: 17px;
+      padding: 30px 0;
+      line-height: 28px;
+      @media #{$large-mobile} {
+        font-size: 15px;
+        padding: 15px 0;
+        line-height: 23px;
+      }
+    }
+    a {
+      display: flex;
+      letter-spacing: 1.5px;
+      align-items: center;
+      width: fit-content;
+      padding: 14px 30px !important;
+      border-radius: 50px !important;
+      font-size: 14px !important;
+      text-transform: uppercase;
+      @media #{$large-mobile} {
+        font-size: 11px !important;
+        padding: 11px 20px !important;
+      }
+      @media #{$small-mobile} {
+        font-size: 11px !important;
+        padding: 11px 20px !important;
+      }
+    }
+  }
+}
+.swiper-button {
+  height: 50px;
+  cursor: pointer;
+  @media #{$large-mobile} {
+    display: none;
+  }
+  @media #{$small-mobile} {
+    display: none;
+  }
+  @media #{$tablet-device} {
+    display: none;
+  }
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 40px 0 rgba(black, 0.2);
+  background-color: rgba(#707070, 0.7);
+  position: absolute;
+  top: calc(50% - 35px);
+  transition: 0.5s all ease;
+  z-index: 2;
+  svg {
+    color: white;
+  }
+  &:hover {
+    background-color: $color__primary;
+  }
+}
+.swiper-button-prev {
+  left: 2%;
+}
+.swiper-button-next {
+  right: 2%;
+}

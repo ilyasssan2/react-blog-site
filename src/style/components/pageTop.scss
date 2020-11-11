@@ -1,0 +1,38 @@
+.PageTop {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 7%;
+
+  background: linear-gradient(to right, rgba(#000000, 0.4), rgba(#000000, 0.7)),
+    url("../../assets/images/slide1.jpg");
+  opacity: 0.9;
+
+  padding: 4% 0;
+  z-index: 1;
+  position: relative;
+
+  color: white;
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+    font-family: "Poppins";
+  }
+  h5 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    a {
+      color: white;
+      &:hover {
+        color: $color__primary;
+      }
+    }
+  }
+}

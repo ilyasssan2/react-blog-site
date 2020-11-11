@@ -1,0 +1,27 @@
+.card__team {
+  border: 0.5px solid rgba($color__secondary, 0.4);
+  border-radius: 6px;
+  margin: 0 10px !important;
+  padding: 20px 30px;
+  width: 330px !important;
+  .card__img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+  }
+  .card__info {
+    padding-left: 10px;
+    padding-top: 10px;
+    span {
+      color: #707070;
+      padding-top: 20px;
+      font-style: italic;
+    }
+  }
+  .card__description {
+    padding-top: 10px;
+    color: #707070;
+    line-height: 21px;
+    font-size: 13px;
+  }
+}

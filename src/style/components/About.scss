@@ -1,0 +1,21 @@
+.About {
+  overflow: hidden;
+  color: #222222;
+  h2 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 42px;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 16px;
+    padding-top: 30px;
+    line-height: 24px;
+    color: #707070;
+  }
+  .about__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

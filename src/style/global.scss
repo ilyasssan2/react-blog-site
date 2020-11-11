@@ -1,0 +1,12 @@
+/*--------------Colors-----------*/
+$color__primary: #0abf53;
+$color__secondary: #00112c;
+$bg2: #f7f7f7;
+
+/*------------Responsive Variables----------------*/
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1499px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";

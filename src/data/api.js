@@ -8,6 +8,30 @@ export const projects = [
     date: "AUGUST 5, 2019",
   },
   {
+    title: "Hello javascript",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+    img: "./assets/images/slide1.jpg",
+    link: "/",
+    date: "AUGUST 5, 2019",
+  },
+  {
+    title: "death net",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+    img: "assets/images/slide2.jpg",
+    link: "/",
+    date: "AUGUST 5, 2020",
+  },
+  {
+    title: " bro",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+    img: "assets/images/slide3.jpg",
+    link: "/",
+    date: "AUGUST 5, 2020",
+  },
+  {
     title: "fast net",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
@@ -16,7 +40,15 @@ export const projects = [
     date: "AUGUST 5, 2020",
   },
   {
-    title: "Last update",
+    title: "Blabla blaba ",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+    img: "assets/images/slide2.jpg",
+    link: "/",
+    date: "AUGUST 5, 2020",
+  },
+  {
+    title: "What A update",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "assets/images/slide3.jpg",

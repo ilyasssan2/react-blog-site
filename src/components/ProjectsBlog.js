@@ -9,7 +9,7 @@ function Blog() {
 
         <div className="services__cards">
           {projects &&
-            projects.map((xs) => (
+            projects.slice(0, 3).map((xs) => (
               <div className="services__card my-shadow" key={xs.title}>
                 <div className="card__img">
                   <img src={xs.img} alt="" />

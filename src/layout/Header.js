@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { Turn as Hamburger } from "hamburger-react";
 import Slide from "react-reveal/Slide";
 function Header() {
-  const [classes, setClasses] = useState("");
+  const [classes, setClasses] = useState();
+
   return (
     <header className={classes}>
       <div className="container">
@@ -15,14 +16,16 @@ function Header() {
           </div>
 
           <div
-            onClick={() => setClasses(!classes ? "Open" : "")}
+            onClick={() => {
+              setClasses(!classes ? "Open" : "");
+            }}
             className="Hamburger"
           >
             <Hamburger size={26} />
           </div>
 
           <div className="overlay"></div>
-          <Slide right>
+          <Slide right={classes ? true : false}>
             <ul>
               <li>
                 <NavLink to="/" exact activeClassName="Active__link">

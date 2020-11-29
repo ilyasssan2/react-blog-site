@@ -12,13 +12,14 @@
     bottom: 0;
     left: 0;
   }
-  .services__cards {
-    .services__card {
-      z-index: 3;
-      .card__info {
-        padding: 20px;
-        background-color: white;
-      }
+
+}
+.services__cards {
+  .services__card {
+    z-index: 3;
+    .card__info {
+      padding: 20px;
+      background-color: white;
     }
   }
 }

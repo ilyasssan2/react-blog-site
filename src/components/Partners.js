@@ -1,10 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import g1 from "../assets/images/Partners/g1.svg";
-import g2 from "../assets/images/Partners/g2.svg";
-import g3 from "../assets/images/Partners/g3.svg";
-import g4 from "../assets/images/Partners/g4.svg";
-import g5 from "../assets/images/Partners/g5.svg";
+import { partners } from "../data/api";
 function Partners() {
   var settings = {
     dots: false,
@@ -48,16 +44,16 @@ function Partners() {
       },
     ],
   };
-  const items = [g1, g2, g3, g4, g5];
   return (
     <div className="Partners ">
       <div className="container">
         <Slider {...settings}>
-          {items.map((xs) => (
-            <div className="img-container" key={xs}>
-              <img src={xs} alt="" />
-            </div>
-          ))}
+          {partners &&
+            partners.map((xs) => (
+              <div className="img-container" key={xs}>
+                <img src={xs} alt="" />
+              </div>
+            ))}
         </Slider>
       </div>
     </div>

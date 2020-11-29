@@ -6,7 +6,10 @@ function Video() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="Video__section">
+    <section
+      className="Video__section"
+      style={{ background: "url(assets/images/slide1.jpg)" }}
+    >
       <h1 className="Video__title">
         wath our video to <br /> know more
       </h1>

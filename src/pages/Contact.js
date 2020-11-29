@@ -3,6 +3,7 @@ import { Send, MapPin, PhoneCall } from "react-feather";
 import Form from "../components/Form";
 import PageTop from "../components/PageTop";
 function Contact() {
+  document.title = "Contact us";
   return (
     <div>
       <PageTop page="Contact Us" />

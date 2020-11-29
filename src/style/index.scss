@@ -1,18 +1,17 @@
-@import "./global.scss";
-@import "./layout/header.scss";
-@import "./Ui/buttons.scss";
-@import "./components/Contactform.scss";
-@import "./components/Video.scss";
-@import "./components/team.scss";
-@import "./components/blogCards.scss";
-@import "./components/About.scss";
-@import "./components/pageTop.scss";
-@import "./components/Partners.scss";
-@import "./layout/footer.scss";
-@import "./components/servicesCards.scss";
-@import "./components/homeSlider.scss";
+@import "./_global.scss";
+@import "./layout/_header.scss";
+@import "./Ui/_buttons.scss";
+@import "./components/_Contactform.scss";
+@import "./components/_Video.scss";
+@import "./components/_team.scss";
+@import "./components/_blogCards.scss";
+@import "./components/_About.scss";
+@import "./components/_pageTop.scss";
+@import "./components/_Partners.scss";
+@import "./layout/_footer.scss";
+@import "./components/_servicesCards.scss";
+@import "./components/_homeSlider.scss";
 @import "node_modules/react-modal-video/scss/modal-video.scss";
-
 * {
   padding: 0;
   margin: 0;
@@ -49,11 +48,7 @@ section {
   }
 }
 .overlay-2 {
-  background: linear-gradient(
-    110deg,
-    rgba($color__secondary, 0.6),
-    rgba(#ffffff, 0.2)
-  );
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .img-container {
@@ -70,11 +65,11 @@ section {
 .loading__container {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: white;
-  z-index: 111;
+  z-index: 110000001;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./layout/Header";
 import "../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import "./style/index.scss";
+import "./index.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { Suspense } from "react";

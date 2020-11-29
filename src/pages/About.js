@@ -1,8 +1,8 @@
 import React from "react";
 import PageTop from "../components/PageTop";
 import Partners from "../components/Partners";
-import img1 from "../assets/images/slide1.jpg";
 function About() {
+  document.title = "About us";
   return (
     <div>
       <PageTop page="About Us" />
@@ -27,14 +27,14 @@ function About() {
           </div>
           <div
             className="col-lg-6 about__img"
-            style={{ backgroundImage: "url(" + img1 + ")" }}
+            style={{ backgroundImage: "url(./assets/images/slide1.jpg)" }}
           ></div>
         </div>
 
         <div className="row">
           <div
             className="col-lg-6 about__img"
-            style={{ backgroundImage: "url(" + img1 + ")" }}
+            style={{ backgroundImage: "url(./assets/images/slide1.jpg)" }}
           ></div>
           <div className="col-lg-6 py-5 pl-4">
             <h2>Lorem ipsum dolor sit amet</h2>

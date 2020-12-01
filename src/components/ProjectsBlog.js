@@ -18,8 +18,8 @@ function Blog() {
                   <h3 className="card__title">{xs.title}</h3>
                   <p className="card__description">{xs.description}</p>
                   <div className="d-flex justify-content-between mt-2">
-                    <Link to={xs.link} className="card__link">
-                      Learn more
+                    <Link to={`/Project/${xs.id}`} className="card__link">
+                      Read more
                     </Link>
                     <label className="card__date">{xs.date}</label>
                   </div>

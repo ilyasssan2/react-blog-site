@@ -19,6 +19,10 @@
   box-sizing: border-box;
   font-family: Montserrat;
 }
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
 ul {
   list-style: none;
 }
@@ -118,5 +122,22 @@ h2 {
       line-height: 24px;
       letter-spacing: 0.5px;
     }
+  }
+}
+.Scroll__button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  z-index: 100000;
+  right: 30px;
+  background-color: $color__primary;
+  border-radius: 50px;
+  svg {
+    color: white;
   }
 }

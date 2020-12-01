@@ -7,7 +7,7 @@ function Footer() {
     <footer>
       <div className="container">
         <div className="row footer1 flex-row justify-content-between ">
-          <div className="col-lg-3 col-6">
+          <div className="col-lg-3 col-6 mb-2">
             <h5>
               FLY-WEB <span>Do what you want</span>{" "}
             </h5>
@@ -18,7 +18,7 @@ function Footer() {
             </p>
           </div>
 
-          <div className="col-lg-2 col-6  ">
+          <div className="col-lg-2 col-6 mb-2 ">
             <h5>Pages</h5>
             <ul>
               <li>
@@ -39,7 +39,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 mb-2">
             <h5>Contact us</h5>
             <ul>
               <li className="mb-2">Put your addresse right here</li>
@@ -48,7 +48,7 @@ function Footer() {
               <li>E: email@test.com</li>
             </ul>
           </div>
-          <div className="col-lg-3 col-6">
+          <div className="col-lg-3 col-6 mb-2">
             <h5>Follow us</h5>
             <ul className="d-flex ul__social">
               <li>

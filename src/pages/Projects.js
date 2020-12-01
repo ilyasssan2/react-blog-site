@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import PageTop from "../components/PageTop";
 import { projects } from "../data/api";
@@ -6,10 +6,12 @@ import { projects } from "../data/api";
 function Projects() {
   document.title = "Projects";
   const pagePerVirew = 6;
-  const [newProjects, setNewProjects] = useState();
-  useEffect(() => {
-    SLiceData(0);
-  }, []);
+  const [newProjects, setNewProjects] = useState(
+    projects.slice(0, pagePerVirew)
+  );
+  const ref = useRef();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   let paganotionButton = [];
   for (let i = 0; i < projects.length / pagePerVirew; i++) {
     paganotionButton.push(i + 1);
@@ -23,6 +25,8 @@ function Projects() {
   }
   const SLiceData = (index) => {
     console.log(pagePerVirew * index, pagePerVirew * index + pagePerVirew);
+    setCurrentIndex(index);
+    ref.current.scrollIntoView({ behavior: "smooth" });
     setNewProjects(
       projects.slice(pagePerVirew * index, pagePerVirew * index + pagePerVirew)
     );
@@ -32,6 +36,7 @@ function Projects() {
       <PageTop page="Projects" />
 
       <div className="container">
+        <div ref={ref}></div>
         <div className="row">
           <div className="col-lg-12 mb-5">
             <div className="services__cards">
@@ -45,8 +50,8 @@ function Projects() {
                       <h3 className="card__title">{xs.title}</h3>
                       <p className="card__description">{xs.description}</p>
                       <div className="d-flex justify-content-between mt-2">
-                        <Link to={xs.link} className="card__link">
-                          Learn more
+                        <Link to={`/Project/${xs.id}`} className="card__link">
+                          Read more
                         </Link>
                         <label className="card__date">{xs.date}</label>
                       </div>
@@ -61,8 +66,13 @@ function Projects() {
             {paganotionButton &&
               paganotionButton.map((xs) => (
                 <span
+                  key={xs}
                   onClick={SLiceData.bind(this, xs - 1)}
-                  className="pagination__button "
+                  className={`pagination__button  ${
+                    xs - 1 === currentIndex
+                      ? "pagination__button__active"
+                      : null
+                  }`}
                 >
                   {xs}
                 </span>

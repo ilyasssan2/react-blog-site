@@ -1,12 +1,20 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Turn as Hamburger } from "hamburger-react";
 import Slide from "react-reveal/Slide";
 function Header() {
   const [classes, setClasses] = useState();
-
+  const [isOpen, setOpen] = useState(false);
+  const ref = useRef();
+  const location = useLocation();
+  useEffect(() => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+    setOpen(false);
+    setClasses("");
+  }, [location]);
   return (
     <header className={classes}>
+      <div ref={ref}></div>
       <div className="container">
         <nav>
           <div className="logo">
@@ -21,7 +29,7 @@ function Header() {
             }}
             className="Hamburger"
           >
-            <Hamburger size={26} />
+            <Hamburger toggled={isOpen} toggle={setOpen} size={26} />
           </div>
 
           <div className="overlay"></div>

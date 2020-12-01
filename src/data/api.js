@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "./assets/images/slide1.jpg",
-    link: "/",
+    id: 1,
     date: "AUGUST 5, 2019",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "./assets/images/slide1.jpg",
-    link: "/",
+    id: 2,
     date: "AUGUST 5, 2019",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "assets/images/slide2.jpg",
-    link: "/",
+    id: 3,
     date: "AUGUST 5, 2020",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "assets/images/slide3.jpg",
-    link: "/",
+    id: 4,
     date: "AUGUST 5, 2020",
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "assets/images/slide2.jpg",
-    link: "/",
+    id: 5,
     date: "AUGUST 5, 2020",
   },
   {
@@ -44,7 +44,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "assets/images/slide2.jpg",
-    link: "/",
+    id: 6,
     date: "AUGUST 5, 2020",
   },
   {
@@ -52,7 +52,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
     img: "assets/images/slide3.jpg",
-    link: "/",
+    id: 7,
     date: "AUGUST 5, 2020",
   },
 ];

@@ -47,7 +47,7 @@ function Team() {
 
   return (
     <section>
-      <div className="container">
+      <div className="container  overflow-hidden">
         <h3 className="section__title">Our Team</h3>
 
         <div className="cards">

@@ -4,6 +4,9 @@
   margin: 0 10px !important;
   padding: 20px 30px;
   width: 330px !important;
+  @media #{$small-mobile} {
+    margin: 0 20px !important;
+  }
   .card__img {
     height: 60px;
     width: 60px;

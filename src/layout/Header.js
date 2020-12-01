@@ -1,20 +1,35 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Turn as Hamburger } from "hamburger-react";
 import Slide from "react-reveal/Slide";
-function Header() {
+function Header({ vl }) {
   const [classes, setClasses] = useState();
   const [isOpen, setOpen] = useState(false);
-  const ref = useRef();
+  const [show, setShow] = useState();
+
   const location = useLocation();
   useEffect(() => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    setShow(false);
+    vl.current.scrollIntoView({ behavior: "smooth" });
     setOpen(false);
+
     setClasses("");
-  }, [location]);
+  }, [location, vl]);
+  const HandelSroll = () => {
+    if (window.pageYOffset > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", HandelSroll);
+    return () => {
+      window.removeEventListener("scroll", HandelSroll);
+    };
+  });
   return (
-    <header className={classes}>
-      <div ref={ref}></div>
+    <header className={`${classes} ${show ? "header__fixed" : ""} `}>
       <div className="container">
         <nav>
           <div className="logo">

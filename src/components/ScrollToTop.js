@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ChevronUp } from "react-feather";
-
+import Slide from "react-reveal/Slide";
 function ScrollToTop({ value }) {
   const [show, setShow] = useState(false);
   const backToTop = () => {
@@ -20,9 +20,11 @@ function ScrollToTop({ value }) {
     };
   });
   return show ? (
-    <div className="Scroll__button" onClick={backToTop}>
-      <ChevronUp />
-    </div>
+    <Slide bottom>
+      <div className="Scroll__button" onClick={backToTop}>
+        <ChevronUp />
+      </div>
+    </Slide>
   ) : null;
 }
 

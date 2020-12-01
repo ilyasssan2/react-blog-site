@@ -35,8 +35,7 @@ function Projects() {
     <div>
       <PageTop page="Projects" />
 
-      <div className="container">
-        <div ref={ref}></div>
+      <div className="container" ref={ref}>
         <div className="row">
           <div className="col-lg-12 mb-5">
             <div className="services__cards">

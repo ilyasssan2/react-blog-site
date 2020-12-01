@@ -10,6 +10,7 @@ import React, { Suspense } from "react";
 import Footer from "./layout/Footer";
 import Loading from "./components/Loading";
 import ScrollToTop from "./components/ScrollToTop";
+import { useRef } from "react";
 const About = React.lazy(() => import("./pages/About"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const Services = React.lazy(() => import("./pages/Services"));
@@ -18,11 +19,13 @@ const Project = React.lazy(() => import("./pages/Project"));
 const Home = React.lazy(() => import("./pages/Home"));
 
 function App() {
+  const ref = useRef();
   return (
     <div className="App">
+      <div ref={ref}></div>
       <Router>
         <ToastProvider>
-          <Header />
+          <Header vl={ref} />
           <Suspense fallback={<Loading />}>
             <Switch>
               <Route component={Home} path="/" exact />

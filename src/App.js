@@ -3,6 +3,7 @@ import { ToastProvider } from "react-toast-notifications";
 import Header from "./layout/Header";
 import "../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "lightgallery.js/dist/css/lightgallery.css";
 import "./index.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +12,7 @@ import Footer from "./layout/Footer";
 import Loading from "./components/Loading";
 import ScrollToTop from "./components/ScrollToTop";
 import { useRef } from "react";
+import NotFound from "./pages/404";
 const About = React.lazy(() => import("./pages/About"));
 const Contact = React.lazy(() => import("./pages/Contact"));
 const Services = React.lazy(() => import("./pages/Services"));
@@ -32,8 +34,9 @@ function App() {
               <Route component={About} path="/About" exact />
               <Route component={Services} path="/Services" exact />
               <Route component={Projects} path="/Projects" exact />
-              <Route component={Project} path="/Project/:id" />
+              <Route component={Project} path="/Project/:id" exact />
               <Route component={Contact} path="/Contact" exact />
+              <Route component={NotFound} />
             </Switch>
           </Suspense>
           <Footer />

@@ -1,0 +1,20 @@
+.project {
+  h1 {
+    color: $color__secondary;
+  }
+  .divider {
+    background-color: #7070703b;
+    height: 3px;
+    border-radius: 50px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  p {
+    color: #707070;
+    line-height: 1.7;
+  }
+}
+.image__container {
+  width: 100% !important;
+  overflow: hidden !important;
+}

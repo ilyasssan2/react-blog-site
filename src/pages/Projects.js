@@ -43,11 +43,13 @@ function Projects() {
                 newProjects.map((xs) => (
                   <div className="services__card my-shadow" key={xs.title}>
                     <div className="card__img">
-                      <img src={xs.img} alt="" />
+                      <img src={xs.img[0]} alt="" />
                     </div>
                     <div className="card__info ">
                       <h3 className="card__title">{xs.title}</h3>
-                      <p className="card__description">{xs.description}</p>
+                      <p className="card__description">
+                        {xs.description.slice(0, 62) + "..."}
+                      </p>
                       <div className="d-flex justify-content-between mt-2">
                         <Link to={`/Project/${xs.id}`} className="card__link">
                           Read more

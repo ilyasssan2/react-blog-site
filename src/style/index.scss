@@ -2,6 +2,7 @@
 @import "./layout/_header.scss";
 @import "./Ui/_buttons.scss";
 @import "./components/_Contactform.scss";
+@import "./components/_project.scss";
 @import "./components/_Video.scss";
 @import "./components/pagaination";
 @import "./components/_team.scss";
@@ -133,11 +134,42 @@ h2 {
   justify-content: center;
   position: fixed;
   bottom: 50px;
-  z-index: 100000;
+  z-index: 1000;
   right: 30px;
   background-color: $color__primary;
   border-radius: 50px;
   svg {
     color: white;
+  }
+}
+
+.error__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 80px);
+  h2 {
+    font-size: 100px;
+    color: $color__primary;
+    letter-spacing: 20px;
+  }
+  ul {
+    display: flex;
+    li {
+      margin-left: 40px;
+      a {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+        &:hover {
+          color: $color__primary;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }

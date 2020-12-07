@@ -18,6 +18,7 @@ function Contact() {
               allowFullScreen=""
               aria-hidden="false"
               tabIndex="0"
+              title="Map"
             ></iframe>
           </div>
         </div>

@@ -2,8 +2,8 @@ export const projects = [
   {
     title: "internet of things",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "./assets/images/slide1.jpg",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
+    img: ["/assets/images/slide1.jpg", "/assets/images/slide2.jpg"],
     id: 1,
     date: "AUGUST 5, 2019",
   },
@@ -11,7 +11,7 @@ export const projects = [
     title: "Hello javascript",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "./assets/images/slide1.jpg",
+    img: ["/assets/images/slide1.jpg"],
     id: 2,
     date: "AUGUST 5, 2019",
   },
@@ -19,7 +19,7 @@ export const projects = [
     title: "death net",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide2.jpg",
+    img: ["/assets/images/slide2.jpg"],
     id: 3,
     date: "AUGUST 5, 2020",
   },
@@ -27,7 +27,7 @@ export const projects = [
     title: " bro",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide3.jpg",
+    img: ["/assets/images/slide3.jpg"],
     id: 4,
     date: "AUGUST 5, 2020",
   },
@@ -35,7 +35,7 @@ export const projects = [
     title: "fast net",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide2.jpg",
+    img: ["/assets/images/slide2.jpg"],
     id: 5,
     date: "AUGUST 5, 2020",
   },
@@ -43,7 +43,7 @@ export const projects = [
     title: "Blabla blaba ",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide2.jpg",
+    img: ["/assets/images/slide2.jpg"],
     id: 6,
     date: "AUGUST 5, 2020",
   },
@@ -51,7 +51,7 @@ export const projects = [
     title: "What A update",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide3.jpg",
+    img: ["/assets/images/slide3.jpg"],
     id: 7,
     date: "AUGUST 5, 2020",
   },

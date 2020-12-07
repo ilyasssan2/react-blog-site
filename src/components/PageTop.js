@@ -6,7 +6,7 @@ function PageTop({ page }) {
     <div
       style={{
         backgroundImage:
-          "linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.7)) ,  url('assets/images/slide1.jpg')",
+          "linear-gradient(to right, rgba(0,0,0, 0.4), rgba(0,0,0, 0.7)) ,  url('/assets/images/slide1.jpg')",
       }}
       className="PageTop "
     >

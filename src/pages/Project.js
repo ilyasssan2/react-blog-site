@@ -4,10 +4,10 @@ import { LightgalleryProvider, LightgalleryItem } from "react-lightgallery";
 import PageTop from "../components/PageTop";
 function Project({ match }) {
   const project = projects[match.params.id - 1];
-  document.title = project ? project.title : "";
+  document.title = project.title;
   return (
     <div>
-      <PageTop page={project ? project.title : "Home"} />
+      <PageTop page={project.title && project.title} />
       <div className="container my-5">
         <div className="row">
           <div className="col-6 ">

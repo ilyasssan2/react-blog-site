@@ -32,7 +32,7 @@ function App() {
             <Switch>
               <Route component={Home} path="/" exact />
               <Route component={About} path="/About" exact />
-              <Route component={Services} path="/Services" exact />
+              <Route component={Services} path="/Services/:id?" exact />
               <Route component={Projects} path="/Projects" exact />
               <Route component={Project} path="/Project/:id" exact />
               <Route component={Contact} path="/Contact" exact />

@@ -56,7 +56,7 @@ function Header({ vl }) {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Projects" activeClassName="Active__link">
+                <NavLink to="/Projects"  activeClassName="Active__link">
                   Projects
                 </NavLink>
               </li>

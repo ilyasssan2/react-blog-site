@@ -10,7 +10,7 @@ export const projects = [
   {
     title: "Hello javascript",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
     img: ["/assets/images/slide1.jpg"],
     id: 2,
     date: "AUGUST 5, 2019",
@@ -18,7 +18,7 @@ export const projects = [
   {
     title: "death net",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
     img: ["/assets/images/slide2.jpg"],
     id: 3,
     date: "AUGUST 5, 2020",
@@ -26,7 +26,7 @@ export const projects = [
   {
     title: " bro",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
     img: ["/assets/images/slide3.jpg"],
     id: 4,
     date: "AUGUST 5, 2020",
@@ -34,7 +34,7 @@ export const projects = [
   {
     title: "fast net",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
     img: ["/assets/images/slide2.jpg"],
     id: 5,
     date: "AUGUST 5, 2020",
@@ -42,7 +42,7 @@ export const projects = [
   {
     title: "Blabla blaba ",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
     img: ["/assets/images/slide2.jpg"],
     id: 6,
     date: "AUGUST 5, 2020",
@@ -50,7 +50,7 @@ export const projects = [
   {
     title: "What A update",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
     img: ["/assets/images/slide3.jpg"],
     id: 7,
     date: "AUGUST 5, 2020",
@@ -116,24 +116,27 @@ export const team = [
 
 export const services = [
   {
+    id : 1,
     title: "fast net",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide2.jpg",
-    link: "/",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
+    img: "/assets/images/slide2.jpg",
+    
   },
   {
+    id : 2,
     title: "Security net",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide1.jpg",
-    link: "/",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
+    img: "/assets/images/slide1.jpg",
+    
   },
   {
+    id : 3,
     title: "more privacy",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum.",
-    img: "assets/images/slide3.jpg",
-    link: "/",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores fugiat porro maiores soluta accusantium est deserunt placeat pariatur commodi sequi aut! Officiis deserunt magnam sit? Incidunt dicta at doloribus.",
+    img: "/assets/images/slide3.jpg",
+   
   },
 ];

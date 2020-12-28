@@ -13,6 +13,18 @@
     color: #707070;
     line-height: 1.7;
   }
+  @media #{$small-mobile} {
+    h1{
+      font-size: 18px;
+    }
+    p{
+      font-size: 12px;
+    }
+    .divider{
+      margin: 10px 0;
+      height: 1.5px;
+    }
+  }
 }
 .image__container {
   width: 100% !important;

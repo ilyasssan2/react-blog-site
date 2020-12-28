@@ -15,9 +15,12 @@ function Project({ match }) {
               <div className="image__container">
                 {project.img &&
                   project.img.map((img) => (
-                    <LightgalleryItem group="group 1" thumb={img} src={img}>
-                      <img src={img} alt="img" style={{ width: "100%" }} />
+                    <div key={img}>
+     <LightgalleryItem group="group 1"  thumb={img} src={img}>
+                      <img src={img}  alt="img" style={{ width: "100%" }} />
                     </LightgalleryItem>
+                    </div>
+               
                   ))}
               </div>
             </LightgalleryProvider>

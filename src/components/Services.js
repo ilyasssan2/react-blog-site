@@ -11,14 +11,14 @@ function Services() {
         <div className="services__cards">
           {services &&
             services.map((xs) => (
-              <div className="services__card" key={xs.title}>
+              <div className="services__card" key={xs.id}>
                 <div className="card__img">
                   <img src={xs.img} alt="" />
                 </div>
                 <div className="card__info">
                   <h3 className="card__title">{xs.title}</h3>
-                  <p className="card__description">{xs.description}</p>
-                  <Link to={xs.link} className="card__link">
+                  <p className="card__description"> {xs.description.slice(0, 62) + "..."}</p>
+                  <Link to={`/Services/${xs.id}`} className="card__link">
                     Learn more
                   </Link>
                 </div>

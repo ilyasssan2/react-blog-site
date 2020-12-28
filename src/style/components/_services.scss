@@ -1,0 +1,34 @@
+.services {
+  background: $bg2;
+  margin-top: -7%;
+  .service {
+    padding: 40px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    &.active {
+      background-color: white;
+    }
+    img {
+      height: 80%;
+      margin-right: 6px;
+      width: auto;
+      display: block;
+      max-height: 70px;
+    }
+    h5 {
+      margin-bottom: 4px;
+      text-transform: capitalize;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: "Poppins";
+    }
+    p {
+      font-size: 14px;
+      color: #707070;
+      line-height: 24px;
+    }
+  }
+}
